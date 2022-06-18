@@ -2,7 +2,7 @@
 
 O repositório tem como objetivo principal reunir códigos que usei como objeto de estudo;
 
-## **Tecnologias**
+## **Projects**
 - IMC - HTML/CSS/JAVASCRIPT;
 - MENU DROPDOWN - HTML/CSS;
 - LINKTREE - HTML/CSS;
