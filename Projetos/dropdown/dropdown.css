@@ -1,0 +1,66 @@
+.dropdown-menu{
+    display: flex;
+    gap: 50px;    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.dropdown-menu li{
+    list-style: none;
+    width: 150px;
+    height: 50px;
+    background-color: gray;
+}
+/*esse aqui é do menu principal */
+.dropdown-menu a{
+    display: block;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*aprenda a fazer a magica agora: 
+no html do lado do nome dentro do link acrescente: &#9660 e ganhará uma seta para baixo
+ok, depois de receber a seta no html crie uma subclasse da seguinte forma: 
+"""
+<li>
+<a href="#">CURSOS &#9660;</a>
+    <ul class="dropdown-submenu">
+        <li><a href="#">Javascript</a></li> 
+</li>
+a sub-ul precisa estar criada dentro do li  nk (a) que recebeu a seta;
+ela possui a mesma estrutura de um nav bar padrão;
+""" 
+
+*/
+/*menu principal quando passa o mouse*/
+.dropdown-menu li:hover > a{
+    background-color: #FBB023;
+    color: black;
+}
+/*pronto, depois que é criado um li dentro da outra, eh só fazer um hover para " > "
+dentro do submenu e correr pra o abraço */
+
+.dropdown-menu li:hover > .dropdown-submenu{
+    display: block;
+}
+.dropdown-submenu{
+    margin-top: 1px;
+    display: none;
+}
+/*esse aqui personaliza o sub menu que aparece depois */
+.dropdown-submenu a{
+    background-color: gray;
+    width: 150%;
+    display: flex;
+    justify-content: center;
+    font-size: 1em;
+    border-left: 7px solid transparent;
+}
+/*aqui é o segundo menu com a função hover */
+.dropdown-submenu li:hover > a{
+    border-left: 8px solid black;
+}

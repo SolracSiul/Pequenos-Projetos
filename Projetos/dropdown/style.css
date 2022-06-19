@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("imagens/street-background.jpg");
+    background-size: cover;
+    background-position:0 20%;
+}
+nav{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}

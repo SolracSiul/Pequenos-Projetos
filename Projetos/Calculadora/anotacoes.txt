@@ -1,0 +1,21 @@
+'use scrict';
+// habilita o modo restrito do javascript, não permite usar uma variavel sem declara-lá;
+
+//o query selector permite seleceionar um atributo que contem a palavra 'tecla' use: *=
+
+const atualizarDisplay = (texto) =>{
+    display.textContent += texto;
+}
+//concatenando os valores no display;
+
+const inserirNumero = (evento) => atualizarDisplay(evento.target.textContent);
+
+// aqui foi criada uma função chamada Atualizar display que vai receber o valor que foi pressionado pelo usuário;
+
+//esse forEach eh um for classico que basicamente cada vez que vc aperta em um numero de NUMEROS ele atribui o evento 'click' e executa a função inserirNumero;
+
+
+operadores
+
+
+

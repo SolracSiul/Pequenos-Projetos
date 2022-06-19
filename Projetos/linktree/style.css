@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #FFF;
+}
+:root{
+    --bgcolor : #1c1c1c;
+    --corfundo: yellow;
+}
+body{
+    background-color: var(--bgcolor)
+}
+.linktree{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+    margin: 40px auto;
+    gap: 20px;
+}
+.linktree img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid rgb(255, 235, 12);
+}
+.linktree h1{
+    font-size: 4rem;
+}
+.linktree a {
+    background-color: var(--corfundo);
+    color: var(--bgcolor);
+    width: 100%;
+    padding: 15px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: solid 2px var(--corfundo)
+}
+.linktree a:hover{
+    background-color: var(--bgcolor);
+    color: var(--corfundo);
+}
+@media (min-width: 1024px){
+    .linktree{
+        width: 40vw;
+    }
+}
